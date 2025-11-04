@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Interactivo de Dany</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <div class="welcome-card">
+            <h1>✨ Bienvenido al Plano Interactivo ✨</h1>
+            <p>Explora puntos y vectores con programación orientada a objetos</p>
+            <button id="startBtn">Comenzar</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>Plano Cartesiano Interactivo</h1>
+        <p>Representa puntos y vectores usando POO con JavaScript y Canvas</p>
+    </header>
+
+    <main>
+        <section id="workspace">
+            <canvas id="plano" width="700" height="500"></canvas>
+        </section>
+
+        <section id="controls">
+            <div class="control-card">
+                <h2>Agregar Punto</h2>
+                <label for="x">Coordenada X:</label>
+                <input type="number" id="x" placeholder="Ej: 3">
+                <label for="y">Coordenada Y:</label>
+                <input type="number" id="y" placeholder="Ej: 2">
+                <button id="addPoint" class="btn-primary">➕ Dibujar Punto</button>
+            </div>
+
+            <div class="control-card">
+                <h2>Agregar Vector</h2>
+                <label for="origen">Origen (x,y):</label>
+                <input type="text" id="origen" placeholder="Ej: 0,0">
+                <label for="fin">Fin (x,y):</label>
+                <input type="text" id="fin" placeholder="Ej: 4,3">
+                <button id="addVector" class="btn-secondary">➡️ Dibujar Vector</button>
+            </div>
+
+            <button id="clear" class="btn-danger">🧹 Limpiar Plano</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>💻 Proyecto educativo desarrollado por <strong>Dany</strong> — Arquitectura de Software</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
